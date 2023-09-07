@@ -1,6 +1,37 @@
-const date_time = document.getElementById('date')
+const date = document.getElementById('date')
+const time = document.getElementById('time')
 
-const current_date_time = new Date()
-const new_date_time = current_date_time.toUTCString()
+let today
+const new_date = new Date()
+const current_date = new_date.getUTCDay()
+const hours = new_date.getUTCHours()
+const mins = new_date.getUTCMinutes()
+const seconds = new_date.getUTCSeconds()
 
-date.innerHTML = `${new_date_time}`
+time.innerHTML = `${hours}:${mins}`
+
+
+switch (current_date) {
+  case 0:
+    today = "Sunday";
+    break;
+  case 1:
+    today = "Monday";
+    break;
+  case 2:
+    today = "Tuesday";
+    break;
+  case 3:
+    today = "Wednesday";
+    break;
+  case 4:
+    today = "Thursday";
+    break;
+  case 5:
+    today = "Friday";
+    break;
+  case 6:
+    today = "Saturday";
+    break;
+}
+date.innerHTML = `${today}`

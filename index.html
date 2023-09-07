@@ -9,15 +9,18 @@
 <body>
     <div class="body">
         <div class="container">
-            <div class="image_cont">
-                <img src="./profile pic.jpg" alt="Oluwaseyi" class="image">
-            </div>
-            <div class="details">
-                <h2>Oluwaseyi Hassan</h2>
-                <span id="date"></span>
-                <span>Track: Frontend</span>
-                <span>Github link: <a class="link" href="https://github.com/Paragonnnn/HNG_TASK">Oluwaseyi</a></span>
-            </div>
+            <section class="image_cont">
+                <img src="./profile pic.jpg" alt="Oluwaseyi Hassan" class="image" data-testid="slackDisplayImage">
+            </section>
+            <section class="details">
+                <h2 data-testid="slackUserName">Oluwaseyi Hassan</h2>
+                <div>
+                    <span id="date" data-testid="currentDayOfTheWeek"></span>
+                    <span id="time" data-testid="currentUTCTime"></span>
+                </div>
+                <span data-testid="myTrack">Track: Frontend</span>
+                <span data-testid="githubURL">Github link: <a class="link" href="https://github.com/Paragonnnn/HNG_TASK">Oluwaseyi</a></span>
+            </section>
         </div>
     </div>
     
