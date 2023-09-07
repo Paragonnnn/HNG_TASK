@@ -6,7 +6,7 @@ const new_date = new Date()
 const current_date = new_date.getUTCDay()
 const hours = new_date.getUTCHours()
 const mins = new_date.getUTCMinutes()
-if (mins>10) {
+if (mins < 10) {
   mins = `0${mins}`
 }
 const seconds = new_date.getUTCSeconds()
